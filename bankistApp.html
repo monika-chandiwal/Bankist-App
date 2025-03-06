@@ -1,0 +1,136 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bankistApp.css" />
+    <title>Bankist App</title>
+  </head>
+  <body>
+    <nav>
+      <p class="welcome">Log in to get started</p>
+      <img src="logo.png" alt="" class="logo" />
+      <form action="" class="login">
+        <input
+          type="text"
+          name="user"
+          placeholder="user"
+          class="login_input user"
+        />
+        <input
+          type="text"
+          name="user"
+          placeholder="PIN"
+          class="login_input pin"
+        />
+        <button class="login_btn">&rarr;</button>
+      </form>
+    </nav>
+
+    <main class="app">
+      <div class="current">
+        <div>
+          <p class="current_balance">Current balance</p>
+          <p>
+            As of
+            <span class="current_date">2/24/2025</span>
+          </p>
+        </div>
+        <p class="current_balance__value">0000€</p>
+      </div>
+      <div class="main">
+        <div class="balance">
+          <div class="movements">
+            <div class="movements_row">
+              <div class="deposit">2 DEPOSIT</div>
+              <div class="deposit_date date">3/23/2025</div>
+              <div class="deposit_balance">$5000</div>
+            </div>
+            <div class="movements_row">
+              <div class="withdraw">2 WITHDRAWAL</div>
+              <div class="withdraw_date date">3/23/2027</div>
+              <div class="withdraw_balance">-$300</div>
+            </div>
+          </div>
+        </div>
+        <div class="update">
+          <div class="transer_money">
+            <p>Transfer money</p>
+            <form action="">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="login_input transferTo"
+                  placeholder=" "
+                />
+                <label>Transfer to</label>
+              </div>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="login_input user_amount"
+                  placeholder=" "
+                />
+                <label>Amount</label>
+              </div>
+              <button class="login_btn transfer_btn">&rarr;</button>
+            </form>
+          </div>
+          <div class="request_loan">
+            <p>Request loan</p>
+            <form action="">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="login_input loan_amount"
+                  placeholder=" "
+                />
+                <label>Amount</label>
+              </div>
+              <button class="login_btn request_btn">&rarr;</button>
+            </form>
+          </div>
+          <div class="close_account">
+            <p>Close account</p>
+            <form action="">
+              <div class="input-group">
+                <input
+                  type="text"
+                  name="confirm_user"
+                  class="login_input confirm_user"
+                />
+                <label for="">Confirm user</label>
+              </div>
+              <div class="input-group">
+                <input
+                  type="text"
+                  name="confirm_pin"
+                  class="login_input confirm_pin"
+                />
+                <label for="">Confirm pin</label>
+              </div>
+              <button class="login_btn close_btn">&rarr;</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="current">
+        <div class="summary">
+          <p class="label">IN <span class="in">$21900 </span></p>
+          <p class="label">OUT <span class="out">$5180</span></p>
+          <p class="label">INTEREST <span class="interest">$328.50 </span></p>
+          <button class="sort">&downarrow;SORT</button>
+        </div>
+        <div class="logout-timer">
+          You will be logged out in
+          <span><time id="currentTime"></time></span>
+        </div>
+      </div>
+    </main>
+
+    <script src="bankistApp.js"></script>
+  </body>
+</html>
+
+<!--Bankist App
+
+-->

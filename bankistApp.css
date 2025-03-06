@@ -1,0 +1,237 @@
+body {
+  background-color: rgb(236, 242, 248);
+  padding: 10px;
+  align-items: center;
+}
+.welcome {
+  font-size: 1.3rem;
+  padding: 0 !important;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo {
+  height: 4rem;
+  color: #000;
+}
+input {
+  border: none;
+  border-radius: 3rem;
+  width: 5.9rem;
+  margin: 0.2rem;
+}
+
+/* Center the main app container */
+.app {
+  width: 95%;
+  max-width: 900px; /* Prevents it from getting too wide on large screens */
+  margin: 2rem auto; /* Centers it horizontally */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Adds spacing between sections */
+  padding: 0;
+  opacity: 0;
+}
+
+/* Style the current balance section */
+.current {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+
+.current_balance {
+  font-size: 2rem;
+  font-weight: lighter;
+  padding: 0;
+  margin: 0;
+}
+
+.current_balance__value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: green;
+}
+
+/* Main section layout */
+.main {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style transactions list */
+.balance {
+  flex: 1;
+  padding-top: 1rem;
+}
+
+.current_balance__value {
+  color: black;
+}
+.movements {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.movements > *:first-child {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.movements > *:last-child {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.movements_row {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 1rem;
+  width: 95%;
+}
+
+/* Styling deposits and withdrawals */
+.deposit {
+  background: rgb(98, 219, 98);
+  padding: 0.3rem 0.8rem;
+  border-radius: 1rem;
+}
+
+.withdraw {
+  background: rgb(194, 42, 42);
+  padding: 0.3rem 0.8rem;
+  border-radius: 1rem;
+}
+
+/* Form section */
+.update {
+  flex: 1;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.update form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.login_input {
+  padding: 0.5rem;
+  border-radius: 5rem;
+  background-color: none;
+  opacity: 0.4;
+}
+
+.login_btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: white;
+  cursor: pointer;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem;
+}
+
+.summary p {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.summary .interest,
+.in {
+  color: rgb(50, 190, 50);
+}
+.summary .out {
+  color: rgb(194, 42, 42);
+}
+/* Logout timer */
+.logout-timer {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.sort {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.label {
+  font-size: 0.9rem !important;
+  color: black;
+}
+
+.label span {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+.close_account {
+  background: linear-gradient(
+    to bottom right,
+    rgb(220, 71, 71),
+    rgb(135, 27, 27)
+  );
+}
+.request_loan {
+  background: linear-gradient(
+    to bottom right,
+    rgb(104, 206, 76),
+    rgb(29, 135, 73)
+  );
+}
+.transer_money {
+  background: linear-gradient(
+    to bottom right,
+    rgb(212, 181, 90),
+    rgb(188, 159, 18)
+  );
+}
+.close_account,
+.request_loan,
+.transer_money {
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+.logout-timer {
+  padding: 0;
+  margin: 0;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.input-group label {
+  padding-left: 1.2rem;
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+.movements {
+  padding-right: 1rem;
+  max-height: 29rem;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
